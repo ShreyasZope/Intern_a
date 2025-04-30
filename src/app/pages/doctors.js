@@ -99,7 +99,7 @@ const DoctorsPage = () => {
     activeFilters.limit = limit;
 
     const queryParams = new URLSearchParams(activeFilters).toString();
-    const apiUrl = `https://intern-b-shreyas-zopes-projects.vercel.app/api/doctors?${queryParams}`;
+    const apiUrl = `http://localhost:8000/api/doctors?${queryParams}`;
 
     try {
       const res = await fetch(apiUrl);
@@ -160,7 +160,7 @@ const DoctorsPage = () => {
   const handleSubmitNewDoctor = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('https://intern-b-shreyas-zopes-projects.vercel.app/api/doctors', {
+      const res = await fetch('http://localhost:8000/api/doctors', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(NewDoc),
