@@ -1,5 +1,6 @@
 "use client";
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button, TextField, Checkbox, FormControlLabel, Select, MenuItem } from '@mui/material';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Image from 'next/image';
 
 import Head from "next/head";
@@ -117,7 +118,7 @@ const DoctorsPage = () => {
       setLoading(false);
     }
   };
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchDoctors();
   }, [filters, page]);
