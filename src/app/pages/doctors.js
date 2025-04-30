@@ -223,7 +223,7 @@ const DoctorsPage = () => {
         }}>
           {/* Left: Logo */}
           <Image
-            src={"/images/image.png"}
+            src={"/Images/image.png"}
             alt="Logo"
             width={100}
             height={50}
